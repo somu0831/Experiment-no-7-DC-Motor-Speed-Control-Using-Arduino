@@ -1,4 +1,4 @@
-![image](https://github.com/vasanthkumarch/Experiment-no-7-DC-Motor-Speed-Control-Using-Arduino/assets/36288975/739cc470-48c8-4873-a730-6319b4afc602)
+
 ###  DATE: 
 
 ###  NAME: 
@@ -32,18 +32,37 @@ TABLE-01 EXITATION TABLE FOR H BRIDGE
 As shown in the circuit diagram we need only 3 Arduino terminal pins, pin 8 is for the push button which toggles the motor direction of rotation. Pins 9 and 10 are PWM signal outputs, at any time there is only 1 active PWM, this allows us to control the direction as well as the speed by varying the duty cycle of the PWM signal. The active PWM pin decides the motor direction of rotation (one at a time, the other output is logic 0).
 
 ### PROGRAM 
+~~~
+int enable = 6;
+int input1 = 3;
+int input2 = 4;
+void setup()
+{
+  pinMode(enable, OUTPUT);
+  pinMode(input1, OUTPUT);
+  pinMode(input2, OUTPUT);
+}
 
+void loop()
+{
+  analogWrite(enable, 255);
+  delay(1000); // Wait for 1000 millisecond(s)
+  digitalWrite(input1, LOW);
+  digitalWrite(input2, HIGH);
+  delay(5000); // Wait for 1000 millisecond(s)
+  digitalWrite(input1, HIGH);
+  digitalWrite(input2, LOW);
+  delay(5000);
+}
+~~~
 ### OUTPUT
 
 ### GRAPH AND TABULATION 
 
+![Screenshot 2024-03-21 114146](https://github.com/vasanthkumarch/Experiment-no-7-DC-Motor-Speed-Control-Using-Arduino/assets/162110820/4335434f-da33-4cf6-ab8a-3a440ee84d78)
 
-![image](https://github.com/vasanthkumarch/Experiment-no-7-DC-Motor-Speed-Control-Using-Arduino/assets/36288975/07e9b28e-9a5b-47bd-a023-3c27fe00fb2b)
-
-
-![image](https://github.com/vasanthkumarch/Experiment-no-7-DC-Motor-Speed-Control-Using-Arduino/assets/36288975/67ed339f-8011-4acc-b793-e5d4930639c7)
+![Screenshot 2024-03-21 113924](https://github.com/vasanthkumarch/Experiment-no-7-DC-Motor-Speed-Control-Using-Arduino/assets/162110820/b2a8f8f5-c7ac-4d5d-b54b-1b9166a82af0)
 
 
 
 ### RESULTS AND DISCUSSION 
-
