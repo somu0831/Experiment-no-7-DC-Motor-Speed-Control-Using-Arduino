@@ -1,9 +1,9 @@
 
-###  DATE: 
+###  DATE: 21/03/2024
 
-###  NAME: 
-###  ROLL NO :
-###  DEPARTMENT:
+###  NAME:  panduru somu
+###  ROLL NO : 212223240111
+###  DEPARTMENT:AIML
 # Experiment-no-6-DC-Motor-Speed-Control-Using-Arduino
 ### AIM : To control the speed and the direction of a DC motor using L293D driver ic( H- bridge)
 
@@ -56,6 +56,11 @@ void loop()
 }
 ~~~
 ### OUTPUT
+## circuit diagram
+![Screenshot 2024-03-21 114740](https://github.com/somu0831/Experiment-no-7-DC-Motor-Speed-Control-Using-Arduino/assets/162110820/dab51f88-d967-4b87-babf-a1aecf8f5ca7)
+
+## Schematic diagram
+![Screenshot 2024-03-21 114836](https://github.com/somu0831/Experiment-no-7-DC-Motor-Speed-Control-Using-Arduino/assets/162110820/15e30b47-4d8a-41f6-8930-451e7210689d)
 
 ### GRAPH AND TABULATION 
 
@@ -66,3 +71,4 @@ void loop()
 
 
 ### RESULTS AND DISCUSSION 
+THUS WE FINISHED CONTROLLING DC MOTOR USING ARUIDNO UNO
